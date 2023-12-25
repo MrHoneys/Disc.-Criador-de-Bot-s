@@ -1,0 +1,179 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Importando ícones da biblioteca Font Awesome (ou outra biblioteca de ícones) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Configuração de Reset da Página */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para o corpo (body) */
+body {
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #060F13;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Tamanho total da tela */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    background-color: #09191F;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+    top: 0;
+}
+
+/* Estilos para a logo */
+.logo {
+    text-decoration: none; /* Remover sublinhado */
+    font-size: 28px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    color: #fff; /* Cor do texto */
+    font-family: 'Libre Franklin', sans-serif; /* Utilizar a fonte importada */
+}
+
+.logo span {
+    color: #7289da; /* Cor do texto para o "sc" */
+}
+
+/* Estilos para a navegação (menu) */
+nav ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento da lista */
+    display: flex; /* Usar flexbox para organização */
+    justify-content: center; /* Centralizar os itens do menu */
+}
+
+nav a {
+    text-decoration: none; /* Remover sublinhado */
+    color: white; /* Cor do texto do menu */
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+    transition: color 0.3s ease; /* Efeito de transição */
+    font-family: 'Libre Franklin', sans-serif; /* Utilizar a fonte importada */
+}
+
+nav a:hover {
+    color: #7289da; /* Mudar a cor ao passar o mouse */
+}
+
+/* Estilos para os botões de redes sociais */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-left: 15px;
+    color: #ccc;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #7289da;
+}
+
+/* Estilos para o texto */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: transparent; /* Torna o texto inicialmente transparente */
+    text-align: center; /* Centraliza texto */
+    margin-top: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative; /* Adiciona posicionamento relativo */
+    animation: hackAnimation 3s infinite; /* Adiciona animação */
+}
+
+.btn {
+    padding: 10px 20px; /* Estilos para o botão */
+    background-color: #7289DA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; /* Removendo sublinhado do link */
+    margin-left: 345px;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none; /* Removendo sublinhado do link */
+}
+
+.btn:hover {
+    background-color: #5f73a6;
+}
+
+@keyframes hackAnimation {
+    0% {
+        color: transparent; /* Texto transparente no início */
+    }
+    20% {
+        color: #fff; /* Texto aparecendo gradualmente */
+    }
+    50% {
+        color: transparent; /* Texto transparente durante a animação */
+    }
+    100% {
+        color: #fff; /* Texto aparecendo novamente */
+    }
+}
+
+.section-title h1 {
+    font-style: italic; /* Adiciona estilo itálico */
+    display: inline-block;
+    animation: blinkCursor 1s infinite; /* Adiciona animação de cursor piscando */
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-right: 2px solid #fff; /* Cria o efeito de cursor piscando */
+    }
+}
+
+.section-title i {
+    position: absolute; /* Posicionamento absoluto */
+    top: -65px; /* Ajusta a posição verticalmente */
+    left: 53%; /* Alinha no centro horizontal */
+    transform: translateX(-50%); /* Ajusta para o centro horizontal */
+    font-size: 30px; /* Tamanho do ícone */
+    animation: changeColor 2s infinite alternate; /* Adiciona a animação de mudança de cor */
+}
+
+@keyframes changeColor {
+    from {
+        color: #fff; /* Cor inicial */
+    }
+    to {
+        color: #7289da; /* Cor final */
+    }
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+    background-color: #09191F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
