@@ -43,3 +43,4 @@ function download(texto, nomeArquivo, tipo) {
         window.URL.revokeObjectURL(url);
     }, 0);
 }
+  

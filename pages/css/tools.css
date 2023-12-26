@@ -199,3 +199,14 @@ hr {
     border-top: 1px solid #ccc; /* Cor e estilo da linha */
     margin: 20px 0; /* Espaçamento */
 }
+
+/* Estilos para o rodapé (footer) */
+footer {
+    background-color: #09191F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
