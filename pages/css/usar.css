@@ -1,0 +1,98 @@
+/* Import da fonte fornecida */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500&display=swap');
+
+/* Estilos para a barra lateral */
+body {
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif; /* Aplicação da fonte */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #09191F;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+.logo {
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-weight: 500; /* Adicionando peso na fonte */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+.logo h2 span {
+    color: #7289da; /* Cor do texto do span */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave do hover */
+}
+
+.menu li:last-child a {
+    border-bottom: none; /* Remove a borda inferior do último item */
+}
+
+.menu li a:hover {
+    background-color: rgba(114, 137, 218, 0.3); /* Cor do hover alterada para suave */
+}
+
+/* Seu CSS existente permanece aqui... */
+
+/* Estilos para os passos do tutorial */
+.content {
+    margin-left: 250px; /* Espaçamento para a barra lateral */
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 40px; /* Espaço entre os passos */
+    background-color: #fff; /* Cor de fundo dos passos */
+    border-radius: 15px; /* Borda arredondada */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.step h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333; /* Cor do título */
+}
+
+.step p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Cor do texto */
+}
+
+.step img {
+    max-width: 80%; /* Tamanho máximo da imagem */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; /* Borda arredondada para imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para imagem */
+}
